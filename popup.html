@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoiler Blocker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Spoiler Blocker</h2>
+
+  <!-- Extension Enable/Disable Toggle --> -->
+  <label>
+    <input type="checkbox" id="toggleExtension" />
+  <span class="slider"></span>
+  </label> 
+
+  <hr>
+
+  <!-- Keyword Blocking Section -->
+  <label for="keywords">Add keywords to block:</label><br/>
+  <input type="text" id="keywordInput" placeholder="Enter here" />
+  <div class="onn">
+  <button id="addKeyword">Add</button>
+  <!-- <div class="slider-container">
+    <label for="extensionToggle" class="switch">
+      <input type="checkbox" id="extensionToggle">
+      <span class="slider"></span>
+    </label>
+    <span id="toggleExtension">OFF</span>
+  </div> -->
+</div>
+
+  <h3>Blocked Keywords:</h3>
+  <ul id="keywordList">
+    <!-- Keywords will be dynamically added here -->
+  </ul>
+
+  <!-- Advanced Options Link -->
+  <a href="#" id="advancedOptions" class="advanced-link">Advanced Spoiler Settings</a>
+
+  <script src="popup.js"></script>
+</body>
+</html>

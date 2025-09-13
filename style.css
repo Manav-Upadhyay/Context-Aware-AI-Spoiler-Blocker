@@ -1,0 +1,207 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(152, 222, 182, 0);
+  color: #333;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+/* Page title */
+h2 {
+  color: #4CAF50;
+  font-size: 20px; 
+  margin-bottom: 15px; 
+}
+
+/* Input label */
+label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Input field */
+input[type="text"] {
+  width: 70%;
+  padding: 7px; 
+  margin: 8px 0;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 8px;
+}
+
+/* Input field focus */
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+/* Add keyword button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 7px 15px; 
+  font-size: 12px; 
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Section heading for blocked keywords */
+h3 {
+  font-size: 14px; 
+  color: #333;
+  margin: 20px 0 8px; 
+  text-align: left;
+}
+
+/* Blocked keywords list */
+ul#keywordList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%; 
+  text-align: left;
+}
+
+ul#keywordList li {
+  background-color: #fff;
+  font-size: 10px; 
+  padding: 3px 5px; 
+  margin: 2px 0; 
+  border-radius: 3px; 
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#keywordList li .remove-btn {
+  font-size: 12px; /* Adjusted size */
+  color: #f44336;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 5px;
+}
+ul#keywordList li .remove-btn:hover {
+  color: #d32f2f;
+  font-size:15px;
+}
+
+/* Spacing for the list items */
+ul#keywordList li span {
+  font-size: 10px;
+  color: #333;
+  margin-right: 5px;
+}
+.advanced-link {
+  display: inline-block;
+  font-size: 12px;
+  color: #4CAF50; 
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-align: right;
+  margin-bottom: 10px;
+  float: right; 
+}
+
+/* Hover effect for the link */
+.advanced-link:hover {
+  color: #388E3C; 
+  text-decoration: underline; 
+}
+.onn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider-container {
+  margin-top: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 10px;
+}
+
+.slider-label {
+  margin-right: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider (track) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 1;
+
+  background-color: #044719;
+  transition: 0.4s;
+  border-radius: 50px;
+  height: 20px;
+  width: 42px;
+  left: 67px;
+
+}
+
+/* The slider (thumb) */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 12px;
+  border-radius: 50px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+/* When the checkbox is checked (ON) */
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+/* Move the slider thumb to the right when checked (ON) */
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* Style for the slider status text */
+#sliderStatus {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
